@@ -3,44 +3,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 14 - Registration Form</title>
+    <title>Assignment 14 - Nested and Responsive Tables</title>
+    <style>
+        .table-wrapper {
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 6px 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <h2>Student Registration Form</h2>
-
-    <form action="#" method="post">
-        <p>
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" required>
-        </p>
-
-        <p>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required>
-        </p>
-
-        <p>
-            Gender:<br>
-            <input type="radio" id="male" name="gender" value="Male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label>
-        </p>
-
-        <p>
-            <label for="course">Course:</label><br>
-            <select id="course" name="course">
-                <option value="btech">B.Tech</option>
-                <option value="bca">BCA</option>
-                <option value="mca">MCA</option>
-            </select>
-        </p>
-
-        <p>
-            <button type="submit">Register</button>
-        </p>
-    </form>
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Lab Batches</th>
+                <th>Faculty</th>
+                <th>Room</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td><!-- Nested table will be added in Part 2 --></td>
+                <td>Dr. Sharma</td>
+                <td>Lab 2</td>
+                <td>2-4 PM</td>
+            </tr>
+        </table>
+    </div>
 
 </body>
 </html>
