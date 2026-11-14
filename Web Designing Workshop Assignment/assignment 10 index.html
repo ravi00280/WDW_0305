@@ -3,19 +3,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 10: Multimedia</title>
+    <title>Assignment 10 - Advanced Multimedia</title>
 </head>
 <body>
 
-    <p><strong>Image</strong></p>
-    <img src="campus.jpg" alt="College campus" width="150" height="150">
+    <h3>College Multimedia Gallery</h3>
 
-    <p><strong>Video</strong></p>
-    <video width="200" controls>
-        <source src="sample.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    <h4>Image</h4>
+    <img src="campus.jpg" alt="College campus" width="200" height="150" border="1">
+
+    <h4>Video</h4>
+    <video width="250" height="150" controls muted poster="campus.jpg">
+        <source src="college_tour.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
     </video>
+
+    <h4>Audio</h4>
+    <audio controls loop>
+        <source src="college_anthem.mp3" type="audio/mpeg">
+        Your browser does not support HTML5 audio.
+    </audio>
+
+    <h4>YouTube</h4>
+    <iframe width="320" height="200" 
+            src="https://youtube.com" 
+            title="YouTube video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
 
 </body>
 </html>
